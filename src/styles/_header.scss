@@ -1,30 +1,44 @@
+@import "config";
+
 header {
   text-align: center;
-  margin-bottom: 20px;
+  // height: 100px;
+  width: $gen_width;
+  margin: auto;
+  // border: 2px solid rgb(255, 255, 255);
+  margin-bottom: 10px;
+
   nav {
-    //   width: 100vw;
-    ul {
-        // display: flex; 
-      li {
-        width: 100px;
-        border: 1px solid rgb(0, 0, 0);
-        list-style-type: none;
-        text-align: center;
+    // set the position when users scroll
+    position: fixed;
+    top: 0px;
+    width: $gen_width;
+    height: 50px;
+    // border: 1px solid rgb(112, 58, 58);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
 
-        a {
-          text-decoration: none;
-       
-          color: whitesmoke;
-          font-size: small;
-
-          &:hover {
-            color: green;
-            background-color: whitesmoke;
-            // width: 300px;
-            transition: 1s;
-          }
-        }
+    a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      &:hover{
+      font-weight: bold;
+      background-color: rgb(255, 255, 255);
+      color: rgb(23, 221, 178);
+      border-radius: 5px;
+      padding: 4px;
+      transition: .5s;
       }
+    }
+  }
+
+  .profile {
+    margin-top: 50px;
+    .profile_pic {
+      max-width: 100%;
+      height: auto;
     }
   }
 }

@@ -10,7 +10,7 @@ import Contact from './components/Contact'
 function App() {
   return (
     <div className="App">
-     <div id='home'>this is a place holder for Home</div>
+     <div id='home'></div> {/*this is a placeholder for the home link */}
      <Header />
      <About />
      <Projects />

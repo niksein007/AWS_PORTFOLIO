@@ -1,16 +1,16 @@
-@import 'config';
-@import 'header';
-@import 'about';
-@import 'projects';
-@import 'contact';
-@import 'footer';
-
-
-
+@import "config";
+@import "header";
+@import "about";
+@import "projects";
+@import "contact";
+@import "footer";
 
 .App {
-   background-color: $main_bg_color;
-   color: $color;
-   width:100vw;
-   margin:0;
+  background-color: $main_bg_color;
+  color: $color;
+  width: 100vw;
+  margin: 0;
+  #home {
+     height: 10px;
+  }
 }
