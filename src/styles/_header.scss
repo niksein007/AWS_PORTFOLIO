@@ -11,8 +11,9 @@ header {
   nav {
     // set the position when users scroll
     position: fixed;
-    top: 0px;
-    width: $gen_width;
+    top: 0;
+    left: 0;// made it stick to the left
+    width: 100%;
     height: 50px;
     // border: 1px solid rgb(112, 58, 58);
     display: flex;
