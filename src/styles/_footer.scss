@@ -1,3 +1,16 @@
 footer{
-    text-align: center;
-}
+    position: fixed;
+    bottom: 0;
+    width: $gen_width;
+    margin: 0 0 0 5%;
+    // border: 1px solid white;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 37, 41);
+    
+    .copyright{
+
+    }
+} 
