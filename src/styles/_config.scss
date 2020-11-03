@@ -1,2 +1,14 @@
-$color: green;
-$bg-color: red;
+$color: rgb(255, 255, 255);
+$main_bg_color:rgb(76, 100, 112);
+$gen_width:90vw;
+$gen_height:400px;
+$gen_border:1px solid black;
+
+@mixin general_prop {
+    width: $gen_width;
+    height:$gen_height;
+    border: $gen_border; 
+    margin: auto;
+    margin-bottom: 10px;
+
+}

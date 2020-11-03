@@ -1,14 +1,16 @@
-import react from 'react'
+import React from 'react'
 
-class Header extends react.Component{
+class Header extends React.Component{
     render(){
         return(
             <header>
                 <nav>
-                    <a href='#'>HOME</a>
-                    <a href='#'>ABOUT</a>
-                    <a href='#'>PROJECTS</a>
-                    <a href='#'>CONTACT</a>
+                    <ul>
+                    <li><a href='#home'>HOME</a></li>
+                    <li><a href='#about'>ABOUT</a></li> 
+                    <li><a href='#projects'>PROJECTS</a></li>
+                    <li><a href='#contact'>CONTACT</a></li>
+                    </ul>
                 </nav>
             </header>
         )
