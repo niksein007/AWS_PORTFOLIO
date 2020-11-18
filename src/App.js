@@ -9,8 +9,7 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-    <div className="App">
-     <div id='home'></div> {/*this is a placeholder for the home link */}
+    <div id="App">
      <Header />
      <About />
      <Projects />

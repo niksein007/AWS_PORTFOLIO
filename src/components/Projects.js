@@ -1,12 +1,16 @@
-import React from 'react'
+import SingleProject from "./SingleProject";
+function Projects() {
+  const project_list = [1, 2, 3, 4];
+  const modified_list = project_list.map((value, index) => (
+    <SingleProject value={value} index={index} />
+  ));
 
-class Projects extends React.Component{
-    render(){
-        return(
-            <div className='projects' id='projects'>
-                my projects
-            </div>
-        ) 
-        }
+  return (
+    <div id="Projects">
+      <p>my projects</p>
+      
+      <div id='projects_container'>{modified_list}</div>
+    </div>
+  );
 }
-export default Projects
+export default Projects;

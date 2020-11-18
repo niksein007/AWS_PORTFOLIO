@@ -4,8 +4,10 @@
 @import "projects";
 @import "contact";
 @import "footer";
+@import "singleProject";
 
-.App {
+
+#App {
   background-color: $main_bg_color;
   color: $color;
   width: 100vw;
@@ -13,6 +15,6 @@
   padding: 0;
 
   #home {
-     height: 10px;
+    height: 10px;
   }
 }

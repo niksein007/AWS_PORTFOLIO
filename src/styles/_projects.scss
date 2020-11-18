@@ -1,3 +1,18 @@
-.projects{
-    @include  general_prop;  
+#Projects {
+  @include general_prop;
+  height: auto;
+  text-align: center;
 }
+
+@media (min-width: 450px) {
+  #projects_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 700px) {
+    #projects_container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }

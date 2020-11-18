@@ -1,45 +1,85 @@
-// @import "config";
-
 header {
-  text-align: center;
-  // height: 100px;
-  width: $gen_width;
-  margin: auto;
-  // border: 2px solid rgb(255, 255, 255);
-  margin-bottom: 10px;
+  #menu_btn {
+    color: black;
+    font-size: xx-large;
+    margin-left: 5vw;
+  }
 
-  nav {
-    // set the position when users scroll
-    position: fixed;
-    top: 0;
-    left: 0;// made it stick to the left
-    width: 100%;
-    height: 50px;
-    // border: 1px solid rgb(112, 58, 58);
+  .hide {
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+  
+  .nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: grey;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
 
-    a {
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-      &:hover{
-      font-weight: bold;
-      background-color: rgb(255, 255, 255);
-      color: rgb(23, 221, 178);
-      border-radius: 5px;
-      padding: 4px;
-      transition: .5s;
-      }
+    a{
+    border: 1px solid black;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+
+    &:hover{
+      background-color: rgb(104, 104, 101);
+      color: white;
+
+    }
     }
   }
 
   .profile {
-    margin-top: 50px;
-    .profile_pic {
-      max-width: 100%;
-      height: auto;
-    }
-  }
+         margin-top: 50px;
+         width: 95vw;
+         margin: auto;
+         .profile_pic {
+          max-width: 100%;
+          height: auto;
+         }
+        }
 }
+
+// header {
+//   text-align: center;
+//   // height: 100px;
+//   width: $gen_width;
+//   margin: auto;
+//   // border: 2px solid rgb(255, 255, 255);
+//   margin-bottom: 10px;
+
+//   nav {
+//     // set the position when users scroll
+//     position: fixed;
+//     top: 0;
+//     left: 0;// made it stick to the left
+//     width: 100%;
+//     height: 50px;
+//     // border: 1px solid rgb(112, 58, 58);
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     background-color: grey;
+
+//     a {
+//       color: rgb(255, 255, 255);
+//       text-decoration: none;
+//       &:hover{
+//       font-weight: bold;
+//       background-color: rgb(255, 255, 255);
+//       color: rgb(23, 221, 178);
+//       border-radius: 5px;
+//       padding: 4px;
+//       transition: .5s;
+//       }
+//     }
+//   }
+
+//   
+//   }
+// }
