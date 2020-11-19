@@ -4,15 +4,15 @@
   text-align: center;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 426px) {
   #projects_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 700px) {
-    #projects_container {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
+// @media (min-width: 768px) {
+//     #projects_container {
+//       grid-template-columns: 1fr 1fr 1fr;
+//     }
+//   }

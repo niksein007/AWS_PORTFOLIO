@@ -25,7 +25,7 @@ function Header() {
 
       <nav className ={display?'hide':'nav'}
       onMouseLeave={()=> menu_control()}>
-        <a href="#">HOME</a>
+        <a href="#home">HOME</a>
 
         <a href="#About">ABOUT</a>
 

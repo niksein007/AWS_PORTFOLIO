@@ -10,11 +10,7 @@
 #App {
   background-color: $main_bg_color;
   color: $color;
-  width: 100vw;
-  margin: 0;
+  margin: auto;
   padding: 0;
 
-  #home {
-    height: 10px;
-  }
 }

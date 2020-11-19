@@ -1,8 +1,11 @@
 import SingleProject from "./SingleProject";
+import projects from './projects_container'
+
+
 function Projects() {
-  const project_list = [1, 2, 3, 4];
-  const modified_list = project_list.map((value, index) => (
-    <SingleProject value={value} index={index} />
+// console.log(projects);
+  const modified_list = projects.map((value, index) => (
+    <SingleProject key={index} value={value} />
   ));
 
   return (
@@ -13,4 +16,4 @@ function Projects() {
     </div>
   );
 }
-export default Projects;
+export default Projects; 

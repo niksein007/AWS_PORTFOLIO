@@ -1,11 +1,19 @@
 function SingleProject(props) {
-    return(
-        <div id='SingleProject'>
-           <img src={props.value} alt={props.index} />
-           <p>please <a href='#'>click</a> to view source code</p>
-
-        </div>
-    )
+  const project = props.value;
+  return (
+    <div id="SingleProject">
+      <p>{project.name}</p>
+      
+      <div id='img_holder'>
+          <a href={project.website}>
+          <img src={project.picture} alt={project.name} />
+          </a>
+     </div>
+      <p>
+        Click <a href={project.github_link}>source code</a> to view 
+      </p>
+    </div>
+  );
 }
 
-export default SingleProject
+export default SingleProject;
