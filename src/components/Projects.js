@@ -1,5 +1,5 @@
 import SingleProject from "./SingleProject";
-import projects from './projects_container'
+import projects from './ProjectsContainer'
 
 
 function Projects() {

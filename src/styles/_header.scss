@@ -12,7 +12,7 @@ header {
     display: block;
   }
 
-  .nav {
+  nav {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -28,51 +28,61 @@ header {
 
       &:hover {
         background-color: rgb(104, 104, 101);
-        color: white;
-      }
-    }
-  }
-
-  .profile {
-    margin-top: 50px;
-    width: 95%;
-    margin: auto;
-    .profile_pic {
-      max-width: 100%;
-      height: auto;
-    }
-  }
-}
-
-@media (min-width: 426px) {
-  #menu_btn {
-    // display: none;
-  }
-  .nav {
-    // display: block;
-    // set the position when users scroll
-    position: fixed;
-    top: 0;
-    left: 0; // made it stick to the left
-    width: 100%;
-    height: 50px;
-    // border: 1px solid rgb(112, 58, 58);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: grey;
-
-    a {
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-      &:hover {
-        font-weight: bold;
-        background-color: rgb(255, 255, 255);
-        color: rgb(23, 221, 178);
-        border-radius: 5px;
-        padding: 4px;
         transition: 0.5s;
+        // color: white;
       }
     }
   }
+
+ 
 }
+
+@media (min-width: 768px) {
+  header {
+    #menu_btn {
+      display: none;
+    }
+    .hide {
+      display: flex;
+    }
+    nav {
+      // set the position when users scroll
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      background-color: grey;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      border: none;
+      padding: none;
+
+      a {
+        border: none;
+        margin-bottom: initial;
+        background-color: initial;
+        &:hover {
+          background-color: rgb(255, 255, 255);
+          font-weight: bold;
+          color: rgb(23, 221, 178);
+          border-radius: 5px;
+          padding: 4px;
+        }
+      }
+    }
+
+  
+  }
+}
+
+// @media(min-width:1024px){
+//   header{
+//     .profile_con {
+//       width: 25%;
+//       margin-top: 50px;
+//       float: left;
+//       margin-left:2.5% ;
+//     }
+//   }
+// }

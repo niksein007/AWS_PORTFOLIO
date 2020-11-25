@@ -5,12 +5,47 @@
 @import "contact";
 @import "footer";
 @import "singleProject";
-
+@import "profileContainer";
 
 #App {
   background-color: $main_bg_color;
   color: $color;
   margin: auto;
   padding: 0;
+}
 
+@media (min-width: 1024px) {
+  #home {
+    grid-area: home;
+  }
+  #Header {
+    grid-area: head;
+  }
+  #ProfileContainer {
+    grid-area: profileCon;
+  }
+  #About {
+    grid-area: about;
+  }
+  #Projects {
+    grid-area: projects;
+  }
+  #Contact {
+    grid-area: contact;
+  }
+  #Footer {
+    grid-area: footer;
+  }
+
+  #App {
+    display: grid;
+    grid-template-areas: 
+    'home home'
+    'head head'
+    'profileCon about'
+    'projects projects'
+    'contact contact'
+    'footer footer'
+    ;
+  }
 }
