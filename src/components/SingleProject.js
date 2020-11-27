@@ -6,11 +6,12 @@ function SingleProject(props) {
       
       <div id='img_holder'>
           <a href={project.website}>
+        <span id='img_msg'>click me</span>
           <img src={project.picture} alt={project.name} />
           </a>
      </div>
-      <p>
-        Click <a href={project.github_link}>source code</a> to view 
+      <p id='source'>
+         <a href={project.github_link} id='code'>view source code</a> 
       </p>
     </div>
   );

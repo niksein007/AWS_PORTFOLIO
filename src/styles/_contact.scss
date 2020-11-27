@@ -1,4 +1,20 @@
 #Contact{
-    @include  general_prop;  
-    margin-bottom: 40px; // clears white space below the page when scrolling down
-} 
+    @include  general_prop; 
+// clears white space below the page when scrolling down
+    margin-bottom: 40px; 
+
+    a{
+        text-decoration: none;
+        color: white;
+        .brands:hover{
+            transform: scale(1.5,1.5);
+            // transform: rotate(360deg);
+
+            transition: 0.5s;
+            transition-timing-function: ease-in-out;
+            background-color: rgb(16, 58, 195);
+            // color: green;
+        }
+    }
+
+}

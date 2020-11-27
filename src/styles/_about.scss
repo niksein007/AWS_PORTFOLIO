@@ -1,3 +1,48 @@
-#About{
-    @include  general_prop;  
+#About {
+  @include general_prop;
+  height: initial;
+  border: none;
+
+  #profilePic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  #About {
+    margin-top: 50px;
+    padding-top: 10px;
+    height: 65vh;
+    margin-bottom: 20px;
+
+    #profilePic {
+      width: 30%;
+      float: left;
+      margin-top: 10px;
+      margin-right: 15px;
+    }
+    p {
+      margin-top: 9px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  #About {
+
+    
+
+    // p {
+      font-size: 21px;
+    // }
+  }
+}
+@media (min-width: 1440px) {
+  #About {
+
+    p {
+      font-size: x-large;
+    }
+  }
 }
