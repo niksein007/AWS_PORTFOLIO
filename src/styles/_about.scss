@@ -1,9 +1,9 @@
 #About {
   @include general_prop;
-  height: initial;
-  border: none;
+  // height: initial;
+  // border: none;
 
-  #profilePic {
+  .profilePic {
     max-width: 100%;
     height: auto;
     border-radius: 10%;
@@ -17,7 +17,7 @@
     height: 65vh;
     margin-bottom: 20px;
 
-    #profilePic {
+    .profilePic {
       width: 30%;
       float: left;
       margin-top: 10px;

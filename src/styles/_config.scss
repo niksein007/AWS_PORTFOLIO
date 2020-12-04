@@ -1,15 +1,42 @@
 $color: rgb(255, 255, 255);
-$main_bg_color:rgb(76, 100, 112);
-$gen_width:95%;
-$gen_height:400px;
-$gen_border:1px solid black;
+$main_bg_color: rgb(76, 100, 112);
+$gen_width: 95%;
+$gen_height: 400px;
+$gen_border: 1px solid black;
 
 @mixin general_prop {
-    width: $gen_width;
-    height:$gen_height;
-    border: $gen_border; 
-    margin: auto;
-    margin-bottom: 10px;
-
+  width: $gen_width;
+  // height:$gen_height;
+  // border: $gen_border;
+  margin: auto;
+  margin-bottom: 10px;
 }
+@keyframes slides {
+  0% {
+    left: 100vw;
+  }
  
+  100% {
+    left: 0;
+
+  }
+}
+@keyframes slides2 {
+    0% {
+      right: 100vw;
+    }
+   
+    100% {
+      right: 0;
+  
+    }
+  }
+
+  .even{
+    animation-name: slides;
+  animation-duration: 1.5s;
+  }
+  .odd{
+    animation-name: slides2;
+  animation-duration: 1.5s;
+  }

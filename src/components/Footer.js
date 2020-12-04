@@ -4,7 +4,7 @@ function Footer () {
     let date = new Date();
     let year = date.getFullYear();
     return (
-      <footer id ='Footer'>
+      <footer id='Footer'>
         <div>
             
         </div>
@@ -15,3 +15,4 @@ function Footer () {
     );
 }
 export default Footer;
+ 
