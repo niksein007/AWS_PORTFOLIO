@@ -4,7 +4,10 @@ import profilePic from "../pictures/profilepic.png";
 function About() {
   return (
     <div id="About">
-      <img src={profilePic} alt="" className="profilePic" />
+      {/* <div id='profilePicCOn'> */}
+         <img src={profilePic} alt="" className="profilePic" />
+         {/* </div> */}
+
       <p>
         Hi, i'm Mark Pearce a cloud engineer and sofware developer. My curiosity
         about things expecially in the field of IT technology lead me to undergo

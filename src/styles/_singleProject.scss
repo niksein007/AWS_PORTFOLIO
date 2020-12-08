@@ -1,19 +1,26 @@
 .SingleProject {
   width: 90%;
-  height: 300px;
+  height: 320px;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 10px;
-  background-color: midnightblue;
-  box-shadow: inset 0px 0px 20px 2px;
+  background-color: white;
+  box-shadow:8px 7px 10px 5px;;
   position: relative;
+  color: rgb(205, 193, 193);
 
   
   &:hover {
-    transition: 1s;
-    background-color:blue;
-  }
+    transition: 0.5s;
+    background-color:rgb(252, 252, 255);
+  box-shadow:5px 5px 4px 1px;;
 
+
+  }
+#projectName{
+  color: black;
+  font-size: x-large;
+}
   a {
     text-decoration: none;
     color: white;
@@ -21,14 +28,14 @@
 
   .img_holder {
     position: relative;
-    width: 60%;
+    width: 95%;
     height: 180px;
     margin: auto;
     // border: 1px solid gold;
 
     &:hover {
       transform: scale(1.1, 1.1);
-      transition: 1s;
+      transition: 0.5s;
       transition-timing-function: ease-in-out;
 
       .img_msg {
@@ -62,15 +69,28 @@
   }
 
   .source {
+    .code{
+      color: black;
+
+    }
     &:hover {
       .code {
-        color: rgb(199, 236, 199);
+        color: rgb(8, 239, 8);
+
         transition: 0.5s;
+        font-size: large;
       }
     }
   }
 
 
 }
+
+// @media (min-width: 768px){
+//     .code{
+//       color: yellow;
+//     }
+
+// }
 
 

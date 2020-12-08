@@ -9,9 +9,10 @@ function Footer () {
             
         </div>
         <div className="copyright">
+          <p id='goTop'>go to top</p>
           <p>Copyright &#169; {year}</p>
         </div>
-      </footer>
+      </footer> 
     );
 }
 export default Footer;

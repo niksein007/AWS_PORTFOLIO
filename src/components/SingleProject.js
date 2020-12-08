@@ -6,7 +6,7 @@ function SingleProject(props) {
 
   return (
     <div className={even_odd !== 0 ?'SingleProject even':'SingleProject odd'} >
-      <p>{project.name}</p>
+      <p   id='projectName'>{project.name}</p>
       
       <div className='img_holder'>
           <a href={project.website}>

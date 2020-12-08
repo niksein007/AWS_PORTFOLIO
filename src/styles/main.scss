@@ -7,7 +7,7 @@
 @import "singleProject";
 
 #App {
-  background-color: darkblue;
+  background-color:whitesmoke ;
   color: $color;
   margin: auto;
   padding: 0;
@@ -15,9 +15,9 @@
 
 
 
-@media(min-width:1440px){
-  #App{
-    max-width: 1440px;
-  }
+// @media(min-width:1440px){
+//   #App{
+//     max-width: 1440px;
+//   }
 
-}  
+// }  

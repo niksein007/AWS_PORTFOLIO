@@ -1,9 +1,18 @@
 header {
+  #menuBtnCon{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
   #menu_btn {
+   
+
     color: black;
     font-size: xx-large;
     margin-left: 5vw;
   }
+}
 
   .hide {
     display: none;
@@ -13,22 +22,30 @@ header {
   }
 
   nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     padding: 10px;
+    background-color: rgb(163, 174, 0);
 
-    a {
+
+    .links {
       border: 1px solid black;
       margin-bottom: 5px;
       color: whitesmoke;
       text-align: center;
       text-decoration: none;
       background-color: black;
+      
 
       &:hover {
         background-color: rgb(104, 104, 101);
         transition: 0.5s;
+        cursor: pointer;
         // color: white;
       }
     }
@@ -53,21 +70,22 @@ header {
       top: 0;
       width: 100%;
       height: 50px;
-      background-color: grey;
+      background-color: rgb(163, 174, 0);
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
       border: none;
       padding: none;
 
-      a {
+      .links {
         border: none;
         margin-bottom: initial;
         background-color: initial;
         &:hover {
+          // transition: 1s;
           background-color: rgb(255, 255, 255);
           font-weight: bold;
-          color: rgb(23, 221, 178);
+          color: rgba(23, 96, 221, 0.958);
           border-radius: 5px;
           padding: 4px;
         }
@@ -76,11 +94,12 @@ header {
 
   
   }
+  
 }
 
-@media(min-width:1440px){
-  nav{
-    max-width: 1440px;
-  }
+// @media(min-width:1440px){
+//   nav{
+//     max-width: 1440px;
+//   }
 
-}
+// }

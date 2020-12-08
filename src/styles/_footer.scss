@@ -8,7 +8,25 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(255, 255, 255);
     background-color: rgb(34, 37, 41);
+    
+    #goTop{
+        display: none;
+    }
     
     
 } 
+@media(max-width:426px){
+footer{
+    #goTop{
+        // display: block;
+    }
+}
+}
+// @media(min-width:1440px){
+//     footer{
+//       max-width: 1440px;
+//     }
+  
+//   }

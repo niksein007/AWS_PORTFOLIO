@@ -10,7 +10,7 @@ function Projects() {
 
   return (
     <div id="Projects">
-      <p>my projects</p>
+      <p id='conText'>my projects</p>
       
       <div id='projects_container'>{modified_list}</div>
     </div>
